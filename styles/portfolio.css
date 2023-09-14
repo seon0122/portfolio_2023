@@ -1,0 +1,136 @@
+body, html {scroll-behavior: smooth;}
+/* header */
+header {
+    /* background: #f2f2f2; */
+    width:100%;
+    display: flex;
+    flex-flow: row-reverse;
+    padding-top: 35px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+header .nav {
+    margin-right: 200px;
+    border:1px solid #000;
+    border-radius: 50px;
+    padding:10px;
+}
+header .nav a {
+    display: inline-block;
+    font-size: 1.563rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    padding:10px 20px;
+    margin-right: 10px;
+}
+header .nav a:last-child {margin-right: 0;}
+header .nav a:hover {
+    color: #fff;
+    background: #9361FF;
+    border-radius: 50px;
+}
+/* main */
+main {width: 100%;}
+/* 공통 적용 css */
+main section {height:100vh;}
+main #project_web1,
+main #project_web2,
+main #project_design1,
+main #project_design2 {
+    background: url(../images/bg_all.png);
+}
+/* home */
+main #home {}
+main #home h1 {}
+main #home h1 img {}
+/* profile */
+main #profile {
+    background: url(../images/bg_profile.png);
+    position: relative;
+}
+main #profile .container {
+    display: flex;
+    max-width: 1440px;
+    margin:0 auto;
+    padding-left: 20px;
+}
+main #profile .container .left {width: 50%;}
+main #profile .container .left .info {}
+main #profile .container .left .info > * {letter-spacing: -0.02em;}
+main #profile .container .left .info p {font-size: 1.313rem;}
+main #profile .container .left .info p em {font-size:1.875rem;}
+main #profile .container .left .info p span {
+    font-size: 1.313rem;
+    /* border-bottom:7px solid #9361ff; */
+}
+main #profile .container .left .info h2 {
+    margin: 65px 0 15px;
+    font-size: 2.813rem;
+    font-weight: 700;
+}
+main #profile .container .left .info h3 {
+    font-size: 1.75rem;
+}
+main #profile .container .left .info .info_btm {
+    position:absolute;
+    bottom:90px;
+}
+main #profile .container .left .info .info_btm p {}
+main #profile .container .left .info .info_btm p img {margin-top:15px;}
+main #profile .container .right {}
+main #profile .container .right .career {}
+main #profile .container .right .career p {}
+main #profile .container .right .career p .career_box {}
+main #profile .container .right .career p .career_box .left {}
+main #profile .container .right .career p .career_box .left p {}
+main #profile .container .right .career p .career_box .right {}
+main #profile .container .right .career p .career_box .right p {}
+main #profile .container .right .career p .career_box .right p em {}
+main #profile .container .right .skill {}
+main #profile .container .right .skill p {}
+main #profile .container .right .skill .skill_box {}
+main #profile .container .right .skill .skill_box span {}
+main #profile .container .right .skill .skill_box span img {}
+/* project_web1 */
+main #project_web1 {}
+main #project_web1 .web_container {}
+main #project_web1 .web_container .left {}
+main #project_web1 .web_container .left h1 {}
+main #project_web1 .web_container .left .link {}
+main #project_web1 .web_container .left .link a {}
+main #project_web1 .web_container .left .txt {}
+main #project_web1 .web_container .left .txt p {}
+main #project_web1 .web_container .right {width: 942px;}
+main #project_web1 .web_container .right img {width: 100%;}
+/* project_web2 */
+main #project_web2 {}
+main #project_web2 .web_container {}
+main #project_web2 .web_container .left {}
+main #project_web2 .web_container .left h1 {}
+main #project_web2 .web_container .left .link {}
+main #project_web2 .web_container .left .link a {}
+main #project_web2 .web_container .left .txt {}
+main #project_web2 .web_container .left .txt p {}
+main #project_web2 .web_container .right {width: 965px;}
+main #project_web2 .web_container .right img {width: 100%;}
+/* project_design1 */
+main #project_design1 {}
+main #project_design1 h1 {}
+main #project_design1 .container {}
+main #project_design1 .container .banner {}
+main #project_design1 .container .banner img {}
+main #project_design1 .container .insta {}
+main #project_design1 .container .insta img {}
+/* project_design2 */
+main #project_design2 {}
+main #project_design2 h1 {}
+main #project_design2 .container {}
+main #project_design2 .container a {}
+main #project_design2 .container a img {}
+/* end */
+main #end {}
+main #end img {}
+main #end .top_btn {}
+main #end .top_btn img {}
