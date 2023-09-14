@@ -1,4 +1,9 @@
 body, html {scroll-behavior: smooth;}
+
+body {
+    /* background:#f2f2f2; */
+}
+
 /* header */
 header {
     /* background: #f2f2f2; */
@@ -12,7 +17,7 @@ header {
     z-index: 999;
 }
 header .nav {
-    margin-right: 200px;
+    margin-right: 100px;
     border:1px solid #000;
     border-radius: 50px;
     padding:10px;
@@ -34,32 +39,54 @@ header .nav a:hover {
 /* main */
 main {width: 100%;}
 /* 공통 적용 css */
-main section {height:100vh;}
-main #project_web1,
-main #project_web2,
-main #project_design1,
-main #project_design2 {
+main section {
+    /* height:100vh; */
+    height: 1024px;
+}
+main #project_web,
+main #project_design {
     background: url(../images/bg_all.png);
+    width: 100%;
+    /* height: 100vh; */
+    height: 1024px;
 }
 /* home */
-main #home {}
-main #home h1 {}
-main #home h1 img {}
+main #home {
+    background: url(../images/main_01.png);
+    /* height: 100vh; */
+    height: 1024px;
+    /* border-bottom: 1px solid #c7c7c7; */
+}
+main #home h1 {
+    width: 100%;
+}
+/* main #home h1 img {width: 100%;} */
+/* main #home::before {
+    content: '';
+    width: 1px;
+    background: #c7c7c7;
+    height:1024px;
+    display: inline-block;
+    margin:0 240px;
+} */
 /* profile */
 main #profile {
     background: url(../images/bg_profile.png);
-    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    height: 1024px;
 }
 main #profile .container {
+    position: relative;
     display: flex;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin:0 auto;
-    padding-left: 20px;
+    padding-left: 260px;
 }
-main #profile .container .left {width: 50%;}
-main #profile .container .left .info {}
+main #profile .container .left {margin-right:150px;}
+main #profile .container .left .info {padding-top: 287px;}
 main #profile .container .left .info > * {letter-spacing: -0.02em;}
-main #profile .container .left .info p {font-size: 1.313rem;}
+main #profile .container .left .info p {font-size: 1.313rem; line-height: 29px;}
 main #profile .container .left .info p em {font-size:1.875rem;}
 main #profile .container .left .info p span {
     font-size: 1.313rem;
@@ -75,60 +102,162 @@ main #profile .container .left .info h3 {
 }
 main #profile .container .left .info .info_btm {
     position:absolute;
-    bottom:90px;
+    bottom:0;
 }
 main #profile .container .left .info .info_btm p {}
 main #profile .container .left .info .info_btm p img {margin-top:15px;}
-main #profile .container .right {}
-main #profile .container .right .career {}
-main #profile .container .right .career p {}
-main #profile .container .right .career p .career_box {}
-main #profile .container .right .career p .career_box .left {}
-main #profile .container .right .career p .career_box .left p {}
-main #profile .container .right .career p .career_box .right {}
-main #profile .container .right .career p .career_box .right p {}
-main #profile .container .right .career p .career_box .right p em {}
+main #profile .container .right {
+    display: flex;
+    flex-flow: column nowrap;
+    /* padding-top: 130px; */
+    width: 40%;
+}
+main #profile .container .right .career {padding-top: 130px;}
+main #profile .container .right .career > p,
+main #profile .container .right .skill > p {
+    font-size: 1.688rem;
+    font-weight:500;
+    margin-bottom:40px;
+}
+main #profile .container .right .career .career_box {
+    display: flex;
+    white-space:nowrap;
+    margin-bottom: 100px;
+    margin-left: 25px;
+}
+main #profile .container .right .career .career_box div p {margin-bottom: 40px;}
+main #profile .container .right .career .career_box .left {margin-right: 15px;}
+main #profile .container .right .career .career_box .left p {font-size: 1.438rem;}
+main #profile .container .right .career .career_box .right {}
+main #profile .container .right .career .career_box .right p {font-size: 1.438rem;}
+main #profile .container .right .career .career_box .right p em {font-size:1.125rem;}
 main #profile .container .right .skill {}
 main #profile .container .right .skill p {}
-main #profile .container .right .skill .skill_box {}
-main #profile .container .right .skill .skill_box span {}
+main #profile .container .right .skill .skill_box {
+    display: flex; flex-flow: row wrap;
+    width: 610px;
+    margin-left: 25px;
+}
+main #profile .container .right .skill .skill_box span {
+    margin-right:50px;
+    padding-bottom: 50px;
+}
 main #profile .container .right .skill .skill_box span img {}
 /* project_web1 */
-main #project_web1 {}
-main #project_web1 .web_container {}
-main #project_web1 .web_container .left {}
-main #project_web1 .web_container .left h1 {}
-main #project_web1 .web_container .left .link {}
-main #project_web1 .web_container .left .link a {}
-main #project_web1 .web_container .left .txt {}
-main #project_web1 .web_container .left .txt p {}
-main #project_web1 .web_container .right {width: 942px;}
-main #project_web1 .web_container .right img {width: 100%;}
+main #project_web {}
+main #project_web .web_container {
+    padding-left: 260px;
+    display: flex;
+    white-space: nowrap;
+    /* position: relative; */
+}
+main #project_web .web_container .left {}
+main #project_web .web_container .left h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+    padding-top: 200px;
+}
+main #project_web .web_container .left .link {margin-bottom: 140px;}
+main #project_web .web_container .left .link a {
+    font-size: 1.438rem;
+    letter-spacing: -0.02em;
+    color:#fff;
+    padding:20px;
+    display: inline-block;
+    background: #000;
+    border-radius: 10px;
+}
+main #project_web .web_container .left .link a:nth-child(1) {}
+main #project_web .web_container .left .link a:nth-child(2) {margin:0 15px;}
+main #project_web .web_container .left .link a:nth-child(3) {}
+main #project_web .web_container .left .link a:hover {
+    background: #9361FF;
+}
+main #project_web .web_container .left .txt {}
+main #project_web .web_container .left .txt p {
+    font-size: 1.813rem;
+    letter-spacing: -0.02em;
+    line-height: 66px;
+}
+main #project_web .web_container .right {
+    width: 860px;
+    padding-top: 450px;
+    /* position: absolute;
+    right: 0;
+    top: 55%; */
+}
+main #project_web .web_container .right img {width: 100%;}
 /* project_web2 */
-main #project_web2 {}
-main #project_web2 .web_container {}
-main #project_web2 .web_container .left {}
-main #project_web2 .web_container .left h1 {}
-main #project_web2 .web_container .left .link {}
-main #project_web2 .web_container .left .link a {}
-main #project_web2 .web_container .left .txt {}
-main #project_web2 .web_container .left .txt p {}
-main #project_web2 .web_container .right {width: 965px;}
-main #project_web2 .web_container .right img {width: 100%;}
+main .web2 {}
+main .web2 .web_container {}
+main .web2 .web_container .left {}
+main .web2 .web_container .left h1 {}
+main .web2 .web_container .left .link {}
+main .web2 .web_container .left .link a {}
+main .web2 .web_container .left .txt {}
+main .web2 .web_container .left .txt p {}
+main .web2 .web_container .right {}
+main .web2 .web_container .right img {}
 /* project_design1 */
-main #project_design1 {}
-main #project_design1 h1 {}
-main #project_design1 .container {}
-main #project_design1 .container .banner {}
-main #project_design1 .container .banner img {}
-main #project_design1 .container .insta {}
-main #project_design1 .container .insta img {}
+main #project_design {
+    padding-left: 260px;
+}
+main #project_design h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    padding-top: 200px;
+    margin-bottom: 85px;
+}
+main #project_design .container {
+    display: flex;
+    padding-left: 30px;
+}
+main #project_design .container .banner {
+    width: 50%;
+}
+main #project_design .container .banner img {
+    width: 820px;
+    margin-bottom: 22px;
+}
+main #project_design .container .insta {
+    width: 620px;
+    padding-left: 30px;
+}
+main #project_design .container .insta img {
+    width: 228px;
+    margin-bottom: 22px;
+    margin-left: 22px;
+}
 /* project_design2 */
-main #project_design2 {}
-main #project_design2 h1 {}
-main #project_design2 .container {}
-main #project_design2 .container a {}
-main #project_design2 .container a img {}
+main .design2 {}
+main .design2 h1 {}
+main .design2 .container {}
+main .design2 .container a {
+    width: 300px;
+    height: 622px;
+    margin-right: 47px;
+}
+main .design2 .container a:nth-child(1) {
+    background: url(../images/book_prototype.jpg) no-repeat;
+    background-size: cover;
+}
+main .design2 .container a:nth-child(2) {
+    background: url(../images/detail_01.jpg) no-repeat;
+    background-size: cover;
+}
+main .design2 .container a:nth-child(3) {
+    background: url(../images/detail_02.jpg) no-repeat;
+    background-size: cover;
+}
+main .design2 .container a:nth-child(4) {
+    background: #d9d9d9;
+    margin-right: 0;
+    text-align: center;
+    padding-top: 300px
+}
 /* end */
 main #end {}
 main #end img {}
