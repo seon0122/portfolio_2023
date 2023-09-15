@@ -183,7 +183,7 @@ main #project_web .web_container .left .txt p {
 }
 main #project_web .web_container .right {
     width: 860px;
-    padding-top: 450px;
+    padding-top: 30%;
     /* position: absolute;
     right: 0;
     top: 55%; */
@@ -214,23 +214,29 @@ main #project_design h1 {
 main #project_design .container {
     display: flex;
     padding-left: 30px;
+    transition: all 0.5s;
 }
 main #project_design .container .banner {
-    width: 50%;
+    width: 52%;
 }
 main #project_design .container .banner img {
-    width: 820px;
-    margin-bottom: 22px;
+    width: 870px;
+    /* height: 220px; */
+    margin-bottom: 40px;
 }
 main #project_design .container .insta {
-    width: 620px;
+    /* width: 620px; */
+    width: 60%;
     padding-left: 30px;
 }
 main #project_design .container .insta img {
-    width: 228px;
+    width: 250px;
     margin-bottom: 22px;
     margin-left: 22px;
 }
+/* main #project_design .container div img:hover {
+    transform: scale(1.2);
+} */
 /* project_design2 */
 main .design2 {}
 main .design2 h1 {}
