@@ -259,11 +259,18 @@ main .design2 .container a:nth-child(3) {
     background-size: cover;
 }
 main .design2 .container a:nth-child(4) {
+    background: url(../images/landing_001.png) no-repeat;
+    background-size: cover;
+}
+main .design2 .container a:nth-child(4):hover {
+
+}
+/* main .design2 .container a:nth-child(4) {
     background: #d9d9d9;
     margin-right: 0;
     text-align: center;
     padding-top: 300px
-}
+} */
 /* end */
 main #end {}
 main #end img {}
