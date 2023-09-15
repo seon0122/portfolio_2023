@@ -123,29 +123,72 @@
             <h1>Design { BANNER }</h1>
             <div class="container">
                 <div class="banner">
-                    <img src="./images/banner_001.jpg" alt="">
-                    <img src="./images/banner_002.jpg" alt="">
+                    <img id="container_img" src="./images/banner_001.jpg" alt="">
+                    <img id="container_img" src="./images/banner_002.jpg" alt="">
                     <!-- <img src="#" alt=""> -->
                 </div>
                 <div class="insta">
-                    <img src="./images/insta_001.jpg" alt="">
-                    <img src="./images/insta_002.jpg" alt="">
-                    <img src="./images/insta_003.jpg" alt="">
-                    <img src="./images/insta_004.jpg" alt="">
+                    <img id="container_img" src="./images/insta_001.jpg" alt="">
+                    <img id="container_img" src="./images/insta_002.jpg" alt="">
+                    <img id="container_img" src="./images/insta_003.jpg" alt="">
+                    <img id="container_img" src="./images/insta_004.jpg" alt="">
                 </div>
             </div>
+            <!-- <div class="popup_container">
+                <div class="popup_content">
+                    <img id="popup_img" src="./images/banner_001.jpg" alt="">
+                    <img id="popup_img" src="./images/banner_002.jpg" alt="">
+                    <img id="popup_img" src="./images/insta_001.jpg" alt="">
+                    <img id="popup_img" src="./images/insta_002.jpg" alt="">
+                    <img id="popup_img" src="./images/insta_003.jpg" alt="">
+                    <img id="popup_img" src="./images/insta_004.jpg" alt="">
+                </div>
+            </div> -->
         </section>
         <section id="project_design" class="design2">
             <h1>Design { 상세페이지 & Landing }</h1>
             <div class="container">
+                <div class="img img01">
+                    <div class="overlay">
+                        <p>01 상세페이지</p>
+                        <a href="https://www.figma.com/file/D9Mrx4JKRyMspbJkVdyg7h/%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80_001?type=design&mode=design&t=Iu6WB55KPDe9SsUh-1">와이어프레임/프로토타입 보기</a>
+                    </div>
+                </div>
+                <div class="img img02">
+                    <div class="overlay">
+                        <p>02 상세페이지</p>
+                        <a href="https://www.figma.com/file/xMCYc2B14wKFXFpmn23p9x/%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80_002?type=design&mode=design&t=Iu6WB55KPDe9SsUh-1">와이어프레임/프로토타입 보기</a>
+                    </div>
+                </div>
+                <div class="img img03">
+                    <div class="overlay">
+                        <p>03 상세페이지</p>
+                        <a href="https://www.figma.com/file/xxh2uqjMUjrAkTiTfP3Znv/%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80_003?type=design&mode=design&t=Iu6WB55KPDe9SsUh-1">와이어프레임/프로토타입 보기</a>
+                    </div>
+                </div>
+                <div class="img img04">
+                    <div class="overlay">
+                        <p>01 랜딩</p>
+                        <a href="https://www.figma.com/file/CN5CcMsDw8RSnNi3EYxOoX/%EB%9E%9C%EB%94%A9-%EC%97%AC%ED%96%89(%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84%2C%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85)?type=design&node-id=0%3A1&mode=design&t=Iu6WB55KPDe9SsUh-1">와이어프레임/프로토타입 보기</a>
+                        <a href="http://seon0122.pe.kr/landing_travel_2023/index.html">결과 보기</a>
+                    </div>
+                </div>
+                <div class="img img05">
+                    <div class="overlay">
+                        <p>준비중</p>
+                        <!-- <a href="#">와이어프레임/프로토타입 보기</a> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container">
                 <a href="#"></a>
                 <a href="#"></a>
                 <a href="#"></a>
                 <a href="http://seon0122.pe.kr/landing_travel_2023/index.html"></a>
-            </div>
+                <a href="#">준비중</a>
+            </div> -->
         </section>
         <section id="end">
-            <img src="#" alt="">
             <!-- <button class="top_btn" type="button"><img src="#" alt=""></button> -->
         </section>
     </main>
@@ -156,7 +199,6 @@
 
         for(let i of header){i.style.display='none'}
         window.addEventListener('scroll',function(){
-            // console.log('.')
             // console.log(window.pageYOffset)
             if(window.pageYOffset > section[1].offsetTop-300){
                 for(let i of header){i.style.display='flex'}
