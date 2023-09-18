@@ -220,7 +220,7 @@ main .web2 .web_container .right img {}
 }
 #popup_view .contents {
     width: 800px;
-    height: 800px;
+    height: 820px;
     overflow-y: auto; /* 이미지 넘칠 때 스크롤 표시 */
     margin:80px auto 0;
 }
