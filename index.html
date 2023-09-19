@@ -238,7 +238,8 @@
 
         const design2 = document.querySelectorAll('#project_design2 a:nth-child(3n-1)')
         const design2_img = document.querySelectorAll('#project_design2 a:nth-child(3n-1) img')
-        console.log(design2, design2_img)
+        const popup_view_contents = document.querySelector('#popup_view .contents')
+        console.log(design2, design2_img, popup_view_contents)
         design2_img[0].style.display = 'none'
         design2_img[1].style.display = 'none'
         design2_img[2].style.display = 'none'
@@ -248,6 +249,7 @@
                 e.preventDefault()
                 // console.log(t)
                 popup_view.style.display = 'block'
+                popup_view_contents.scrollTop = 0;
                 // console.log(this.firstElementChild.src)
                 popup_img.src = this.firstElementChild.src
             })
