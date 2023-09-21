@@ -191,23 +191,35 @@ main .web .web_container .left .txt p {
 }
 main .web .web_container .right {
     width: 860px;
-    padding-top: 30%;
+    padding-top: 25%;
     /* position: absolute;
     right: 0;
     top: 55%; */
 }
 main .web .web_container .right img {width: 100%;}
 /* project_web2 */
-main .web2 {}
-main .web2 .web_container {}
-main .web2 .web_container .left {}
-main .web2 .web_container .left h1 {}
-main .web2 .web_container .left .link {}
-main .web2 .web_container .left .link a {}
-main .web2 .web_container .left .txt {}
-main .web2 .web_container .left .txt p {}
-main .web2 .web_container .right {}
-main .web2 .web_container .right img {}
+main #project_web2 .web_container {}
+main #project_web2 .web_container .left {}
+main #project_web2 .web_container .left h1 {}
+main #project_web2 .web_container .left .link {}
+main #project_web2 .web_container .left .link a {}
+main #project_web2 .web_container .left .txt {}
+main #project_web2 .web_container .left .txt p {}
+main #project_web2 .web_container .right {padding-top: 22%;}
+main #project_web2 .web_container .right img {}
+/* project_web3 */
+main #project_web3 .web_container {}
+main #project_web3 .web_container .left {}
+main #project_web3 .web_container .left h1 {}
+main #project_web3 .web_container .left .link {}
+main #project_web3 .web_container .left .link a {}
+main #project_web3 .web_container .left .txt {}
+main #project_web3 .web_container .left .txt p {}
+main #project_web3 .web_container .right {
+    width:700px;
+    padding-top: 22%;
+}
+main .web3 .web_container .right img {width: 100%;}
 /* popup */
 #popup_view {
     position: fixed;
