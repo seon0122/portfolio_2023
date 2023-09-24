@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오★우미선</title>
+    <title>우미선 포트폴리오</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
@@ -11,12 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet"> -->
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/portfolio.css">
@@ -94,10 +88,10 @@
                         <a href="https://www.figma.com/file/29Ssj5WgWJukdYEZ6GfNvd/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4---%ED%97%A4%EB%9D%BC-%EC%99%80%EC%9D%B4%EC%96%B4%2C%ED%94%84%EB%A1%9C%ED%86%A0?type=design&node-id=0%3A1&mode=design&t=xIzIz5buuhOisWol-1" target='_blank' rel="noopener noreferrer">와이어프레임/프로토타입 보기</a>
                     </div>
                     <div class="txt">
-                        <p>헤라 반응형웹 (Desktop 1920, Tablet 900, Mobile 480 구성)</p>
-                        <p>7일, 개인 작업 100%</p>
-                        <p>index/product_list/product_detail/search/map 총 5페이지</p>
-                        <p>Skill : figma, photoshop, HTML5, CSS3, Javascript,<br> php, gnuboard, git</p>
+                        <p><span>Type</span> Responsive web</p>
+                        <p><span>Work</span> 개인작업 100%</p>
+                        <p><span>Page</span> main, sub*4 총 5페이지</p>
+                        <p><span>Skill</span> figma, photoshop, HTML5, CSS3, Javascript,<br>php, gnuboard, git</p>
                     </div>
                 </div>
                 <div class="right">
@@ -115,10 +109,10 @@
                         <a href="#" target='_blank' rel="noopener noreferrer">와이어프레임/프로토타입 보기</a>
                     </div>
                     <div class="txt">
-                        <p>헤라 반응형웹 (Desktop 1920 구성)</p>
-                        <p>3일, 개인 100% 작업</p>
-                        <p>index 메인페이지</p>
-                        <p>Skill : figma, photoshop, HTML5, CSS3, Javascript, git</p>
+                        <p><span>Type</span> Web site</p>
+                        <p><span>Work</span> 개인작업 100%</p>
+                        <p><span>Page</span> main</p>
+                        <p><span>Skill</span> figma, photoshop, HTML5, CSS3, Javascript</p>
                     </div>
                 </div>
                 <div class="right">
@@ -131,15 +125,15 @@
                 <div class="left">
                     <h1>WEB : Clone Coding { 서울시청 }</h1>
                     <div class="link">
-                        <a href="https://seon0122.pe.kr/portfolil_seoul/index.html" target='_blank' rel="noopener noreferrer">프로젝트 결과 보기</a>
+                        <a href="https://seon0122.pe.kr/portfolio_seoul/index.html" target='_blank' rel="noopener noreferrer">프로젝트 결과 보기</a>
                         <!-- <a href="#" target='_blank' rel="noopener noreferrer">기획서 보기</a> -->
                         <!-- <a href="#" target='_blank' rel="noopener noreferrer">와이어프레임/프로토타입 보기</a> -->
                     </div>
                     <div class="txt">
-                        <p>서울시청 클론코딩 (Desktop 1152px 구성)</p>
-                        <p>2일, 개인 100% 작업</p>
-                        <p>index/login 총 2페이지</p>
-                        <p>Skill : HTML5, CSS3, jquery</p>
+                        <p><span>Type</span> Web site</p>
+                        <p><span>Work</span> 개인작업 100%</p>
+                        <p><span>Page</span> main, login 총 2페이지</p>
+                        <p><span>Skill</span> HTML5, CSS3, jquery</p>
                     </div>
                 </div>
                 <div class="right">
@@ -220,6 +214,7 @@
         </section>
     </main>
     <script>
+        // header
         const header = document.querySelectorAll('header')
         const section = document.querySelectorAll('section')
         console.log(header, section)
@@ -234,12 +229,12 @@
             }
         })
 
-        console.log('-----------')
         // popup
         const popup_view = document.querySelector('#popup_view')
         const popup_img = document.querySelector('#popup_view img')
         const project_design1 = document.querySelectorAll('#project_design1 a')
-        console.log(popup_view, popup_img, project_design1)
+        const banner = document.querySelector('.design .container')
+        console.log(popup_view, popup_img, project_design1, banner)
         
         popup_view.style.display = 'none'
         
@@ -250,6 +245,15 @@
                 // console.log(this.firstElementChild.src)
                 popup_view.style.display = 'block'
                 popup_img.src = this.firstElementChild.src
+                // if(i === 0){
+                //     console.log(i)
+                //     banner.style.width = '1600px';
+                // }
+                if (i === 0 || i === 1) {
+                    popup_view_contents.style.width = '80%'
+                }else {
+                    popup_view_contents.style.width = '850px'
+                }
             })
         })
 

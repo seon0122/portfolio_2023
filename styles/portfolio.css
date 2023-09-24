@@ -143,7 +143,6 @@ main #profile .container .right .skill .skill_box span {
     margin-right:50px;
     padding-bottom: 50px;
 }
-main #profile .container .right .skill .skill_box span img {}
 /* main #profile .container .right .skill .skill_box > p:nth-child(1) {
     font-size: 2.8rem;
     font-weight: 700;
@@ -151,7 +150,7 @@ main #profile .container .right .skill .skill_box span img {}
     border-radius: 15px;
     padding:15px;
 } */
-
+main #profile .container .right .skill .skill_box span img {}
 /* project_web1 */
 main .web {}
 main .web .web_container {
@@ -185,6 +184,11 @@ main .web .web_container .left .link a:hover {
     background: #9361FF;
 }
 main .web .web_container .left .txt {}
+main .web .web_container .left .txt span {
+    font-size: 1.813rem;
+    font-weight: 700;
+    margin-right: 15px;
+}
 main .web .web_container .left .txt p {
     font-size: 1.813rem;
     letter-spacing: -0.02em;
@@ -192,35 +196,23 @@ main .web .web_container .left .txt p {
 }
 main .web .web_container .right {
     width: 860px;
-    padding-top: 25%;
+    padding-top: 30%;
     /* position: absolute;
     right: 0;
     top: 55%; */
 }
 main .web .web_container .right img {width: 100%;}
 /* project_web2 */
-main #project_web2 .web_container {}
-main #project_web2 .web_container .left {}
-main #project_web2 .web_container .left h1 {}
-main #project_web2 .web_container .left .link {}
-main #project_web2 .web_container .left .link a {}
-main #project_web2 .web_container .left .txt {}
-main #project_web2 .web_container .left .txt p {}
-main #project_web2 .web_container .right {padding-top: 22%;}
-main #project_web2 .web_container .right img {}
-/* project_web3 */
-main #project_web3 .web_container {}
-main #project_web3 .web_container .left {}
-main #project_web3 .web_container .left h1 {}
-main #project_web3 .web_container .left .link {}
-main #project_web3 .web_container .left .link a {}
-main #project_web3 .web_container .left .txt {}
-main #project_web3 .web_container .left .txt p {}
-main #project_web3 .web_container .right {
-    width:700px;
-    padding-top: 22%;
-}
-main .web3 .web_container .right img {width: 100%;}
+main .web2 {}
+main .web2 .web_container {}
+main .web2 .web_container .left {}
+main .web2 .web_container .left h1 {}
+main .web2 .web_container .left .link {}
+main .web2 .web_container .left .link a {}
+main .web2 .web_container .left .txt {}
+main .web2 .web_container .left .txt p {}
+main .web2 .web_container .right {}
+main .web2 .web_container .right img {}
 /* popup */
 #popup_view {
     position: fixed;
@@ -232,8 +224,9 @@ main .web3 .web_container .right img {width: 100%;}
     z-index: 999;
 }
 #popup_view .contents {
-    width: 800px;
-    height: 820px;
+    /* width: 80%; */
+    width: 850px;
+    height: 850px;
     overflow-y: auto; /* 이미지 넘칠 때 스크롤 표시 */
     margin:80px auto 0;
 }
