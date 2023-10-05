@@ -1,8 +1,5 @@
 body, html {scroll-behavior: smooth;}
-body {
-    /* background:#f2f2f2; */
-}
-
+/* header, main {min-width:1200px;} */
 /* header */
 header {
     /* background: #f2f2f2; */
