@@ -1,4 +1,7 @@
-body, html {scroll-behavior: smooth;}
+body, html {
+    scroll-behavior: smooth;
+    min-width: 1100px;
+}
 /* header, main {min-width:1200px;} */
 /* header */
 header {
@@ -79,7 +82,7 @@ main #profile .container {
     margin:0 auto;
     padding-left: 260px;
 }
-main #profile .container .left {margin-right:150px;}
+main #profile .container .left {margin-right:130px;}
 main #profile .container .left .info {padding-top: 287px;}
 main #profile .container .left .info > * {letter-spacing: -0.02em;}
 main #profile .container .left .info p {font-size: 1.313rem; line-height: 40px;}
@@ -108,7 +111,7 @@ main #profile .container .right {
     display: flex;
     flex-flow: column nowrap;
     /* padding-top: 130px; */
-    width: 40%;
+    width: 45%;
 }
 main #profile .container .right .career {padding-top: 130px;}
 main #profile .container .right .career > p,
@@ -154,9 +157,9 @@ main .web .web_container {
     padding-left: 260px;
     display: flex;
     white-space: nowrap;
-    position: relative;
+    /* position: relative; */
 }
-main .web .web_container .left {}
+main .web .web_container .left {z-index: 1;}
 main .web .web_container .left h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -192,11 +195,15 @@ main .web .web_container .left .txt p {
     line-height: 66px;
 }
 main .web .web_container .right {
-    width: 860px;
+    position: relative;
+    top: 370px;
+    /* position: absolute; */
+    /* width: 860px; */
     /* padding-top: 20%; */
-    position: absolute;
-    right: 40px;
-    top: 300px;
+    /* right: 40px; */
+    /* top: 300px; */
+    /* width: 60%; */
+    /* right: -2%; */
 }
 main .web .web_container .right img {width: 100%;}
 /* project_web2 */
