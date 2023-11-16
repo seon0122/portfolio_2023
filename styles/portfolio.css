@@ -103,7 +103,7 @@ main #profile .container .left .info h3 {
 }
 main #profile .container .left .info .info_btm {
     position:absolute;
-    bottom:0;
+    bottom:35px;
 }
 main #profile .container .left .info .info_btm p {}
 main #profile .container .left .info .info_btm p img {margin-top:15px;}
@@ -120,16 +120,20 @@ main #profile .container .right .skill > p {
     font-weight:500;
     margin-bottom:40px;
 }
+main #profile .container .right .career .edu_box,
 main #profile .container .right .career .career_box {
     display: flex;
     white-space:nowrap;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-left: 25px;
 }
+main #profile .container .right .career .edu_box div p,
 main #profile .container .right .career .career_box div p {margin-bottom: 40px;}
+main #profile .container .right .career .edu_box .left,
 main #profile .container .right .career .career_box .left {margin-right: 15px;}
+main #profile .container .right .career .edu_box .left p,
 main #profile .container .right .career .career_box .left p {font-size: 1.438rem;}
-main #profile .container .right .career .career_box .right {}
+main #profile .container .right .career .edu_box .right p,
 main #profile .container .right .career .career_box .right p {font-size: 1.438rem;}
 main #profile .container .right .career .career_box .right p em {font-size:1.125rem;}
 main #profile .container .right .skill {}
